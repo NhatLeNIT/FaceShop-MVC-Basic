@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FaceShop</title>
+	<script src="../../public/js/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/jquery-ui.js" type="text/javascript"></script>
+	<link href="../../public/js/jquery/css/jquery-ui.css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<script src="../../public/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<link href="../../public/js/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../public/js/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet" type="text/css">
+	<link href="../../public/css/stylesheet.css" rel="stylesheet">
+	<script src="../../public/js/opentheme/ocslideshow/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/vermegamenu/ver_menu.js" type="text/javascript"></script>
+	<link href="../../public/css/ocslideshow/ocslideshow.css" rel="stylesheet" />
+	<link href="../../public/css/css/animate.css" rel="stylesheet" />
+
+	<script src="../../public/js/opentheme/hozmegamenu/custommenu.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/hozmegamenu/mobile_menu.js" type="text/javascript"></script>
+	<link href="../../public/css/hozmegamenu/css/custommenu.css" rel="stylesheet" />
+	<link href="../../public/css/css/owl.carousel.css" rel="stylesheet" />
+	<script src="../../public/js/jquery/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/ocquickview/ocquickview.js" type="text/javascript"></script>
+	<link href="../../public/css/ocquickview/css/ocquickview.css" rel="stylesheet">
+	<link href="../../public/css/oclayerednavigation/css/oclayerednavigation.css" rel="stylesheet">
+	<script src="../../public/js/opentheme/oclayerednavigation/oclayerednavigation.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/elevatezoom/jquery.elevatezoom.js" type="text/javascript"></script>
+	<link href="../../public/css/ocslideshow/ocslideshow.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/css/categorytabslider.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/jquery.countdown.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/css/ocpagebuilder.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/jquery/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+	<script src="../../public/js/common.js" type="text/javascript"></script>
+	<link href="image/catalog/cart.png" rel="icon" />
+	<script src="../../public/js/opentheme/jquery.bpopup.min.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/ocslideshow/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery.plugin.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+
+<body class="common-home">
+
+	<!-- nav#top start -->
+	<nav id="top">
+		<div class="container">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-7 col-sm-7 col-sms-12">
+						<div class="top-left">
+							<div id="top-links">
+								<ul class="list-inline">
+									<li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle link-account" data-toggle="dropdown"><span>My Account</span></a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#" title="My Account" data-toggle="dropdown"><span>My Account</span></a></li>
+											<li><a href="#">Register</a></li>
+											<li><a href="#">Login</a></li>
+											<li><a href="#" title="Shopping Cart"><span>Shopping Cart</span></a></li>
+											<li><a href="#" title="Checkout"><span >Checkout</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5 col-sms-12">
+						<div class="link-header">
+							<div class="store"><a href="#">Store Location </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- nav#top end -->
+
+	<!-- header start -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-sms-12">
+					<div id="logo">
+						<a href="#"><img src="../../public/images/logo.png" title="Legend 7" alt="Legend 7" class="img-responsive" /></a>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-9 col-sms-12">
+					<!-- search box start -->
+					<div id="search-by-category">
+						<div class="search-container">
+							<div class="categories-container">
+								<div class="hover-cate">
+									<p><span class="cate-selected" data-value="0">All Categories</span></p>
+									<ul class="cate-items">
+										<li class="item-cate" data-value="0">All Categories</li>
+										<li data-value="106" class="item-cate">Accessories</li>
+									</ul>
+								</div>
+							</div>
+							<input type="text" name="search" id="text-search" value="" placeholder="Search entire store here ..." class="" />
+							<div id="sp-btn-search" class="">
+								<button type="button" id="btn-search-category" class="btn btn-default btn-lg"> </button>
+							</div>
+						</div>
+						<div class="search-ajax">
+							<div class="ajax-loader-container" style="display: none;">
+								<img src="image/catalog/AjaxLoader.gif" class="ajax-load-img" width="30" height="30" alt="plazathemes.com" />
+							</div>
+							<div class="ajax-result-container">
+								<!-- Content of search results -->
+							</div>
+						</div>
+						<input type="hidden" id="ajax-search-enable" value="1" />
+					</div>
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+							//box search
+							$('.hover-cate p').click(function() {
+								$(".cate-items").toggle("100");
+							});
+						});
+					</script>
+
+					<!-- search box end -->
+
+					<div class="free-shipping">
+						<p>Hotline: 19001267(8h00 - 22h00)</p>
+					</div>
+					<!-- .header-right start -->
+					<div class="header-right">
+						<div id="cart" class="btn-group btn-block">
+							<div class="top-cart-contain">
+								<div class="arrow-cart"></div>
+								<button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-cart btn-inverse btn-block btn-lg dropdown-toggle">
+								<span id="cart-total">My cart <span class="number-cart">0</span><span class="price-cart">$0.00</span></span>
+							</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<p class="text-center">Your shopping cart is empty!</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-wishlist"><a href="#" id="wishlist-total" title="Wish List (0)"><span>Wish List (0)</span></a></div>
+						<div class="header-compare">
+							<a href="index6431.html?route=product/compare" id="compare-total" title="Compare"><span>Compare</span></a>
+						</div>
+					</div>
+					<!-- .header-right end -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- menu mobile start -->
+	<div class="ma-nav-mobile-container">
+		<div class="hozmenu">
+			<div class="navbar">
+				<div id="navbar-inner" class="navbar-inner navbar-inactive">
+					<div class="menu-mobile">
+						<a class="btn btn-navbar navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+						<span class="brand navbar-brand">categories</span>
+					</div>
+					<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+						<li><span class=" button-view1 collapse1"><a href="indexef1f.html?route=product/category&amp;path=106">Accessories</a></span>
+							<ul class="level2">
+								<li><span class="button-view2   no-close"><a href="index8fdd.html?route=product/category&amp;path=107">Cables</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="index6c59.html?route=product/category&amp;path=109">Holders &amp; Stands</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="indexc00c.html?route=product/category&amp;path=108">Screen Protectors</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="indexd981.html?route=product/category&amp;path=110">Storage</a></span>
+									<ul class="level3"></ul>
+								</li>
+							</ul>
+						</li>
+						<li><span class=" button-view1 collapse1"><a href="index73b3.html?route=product/category&amp;path=59">Computers</a></span>
+							<ul class="level2">
+								<li><span class="button-view2   collapse1"><a href="index08bf.html?route=product/category&amp;path=76">Accessories</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexdb3b.html?route=product/category&amp;path=77">Earbud Tips</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexaf75.html?route=product/category&amp;path=78">Headphone Amps</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexc94f.html?route=product/category&amp;path=79">Headphone Cases</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index460c.html?route=product/category&amp;path=80">Headphone Splitters</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index91c2.html?route=product/category&amp;path=71">Headphones Pro</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexec58.html?route=product/category&amp;path=74">Headphone Amplifiers</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexcac5.html?route=product/category&amp;path=75">Headphone Dacs</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexb4d8.html?route=product/category&amp;path=73">Hi-Res Music Players</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index4371.html?route=product/category&amp;path=72">Wire Managers</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index76bc.html?route=product/category&amp;path=61">Headphones Solo™2</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexcd29.html?route=product/category&amp;path=63">Bluetooth/Wireless</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index2b30.html?route=product/category&amp;path=64">Extra Bass</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index0854.html?route=product/category&amp;path=62">Headphones with Mic</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index4eb1.html?route=product/category&amp;path=65">Noise Cancelling</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index78aa.html?route=product/category&amp;path=66">Studio wireless</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="index370c.html?route=product/category&amp;path=68">On Ear Headphones</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexe1fb.html?route=product/category&amp;path=69">Planar Magnetic</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexebd7.html?route=product/category&amp;path=67">Wireless Headphones</a></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- menu mobile end -->
+
+
+	<!-- menu desktop start -->
+	<div class="nav-container visible-lg visible-md">
+
+		<div class="nav1">
+			<div class="nav2">
+				<div id="pt_custommenu" class="pt_custommenu">
+					<div class="container">
+						<div id="pt_menu_home" class="pt_menu">
+							<div class="parentMenu"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="pt_menu nav-1 pt_menu_had_child">
+							<div class="parentMenu">
+								<a href="#">
+																<span>Kỹ thuật số</span>
+														</a>
+							</div>
+							<div id="popup57" class="popup" style="display: none; width: 1228px;">
+								<div class="block1" id="block157">
+									<div class="column">
+										<div class="itemMenu level1">
+											<div class="itemSubMenu level0">
+												<div class="itemMenu level1">
+													<a class="itemMenuName level0 act" href="index388d.html?route=product/category&amp;path=102"><span>máy ảnh ống kính rời</span></a>
+													<a class="itemMenuName level0 act" href="indexf606.html?route=product/category&amp;path=105"><span>Photo&nbsp;Accessories</span></a>
+													<a class="itemMenuName level0 act" href="index974f.html?route=product/category&amp;path=103"><span>Sports&nbsp;&amp;&nbsp;Action</span></a>
+													<a class="itemMenuName level0 act" href="index2e37.html?route=product/category&amp;path=104"><span>Traditional</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pt_menu nav-3 pt_menu_had_child">
+							<div class="parentMenu">
+								<a href="#">
+                                <span>Kỹ thuật số</span>
+                            </a>
+							</div>
+							<div id="popup57" class="popup" style="display: none; width: 1228px;">
+								<div class="block1" id="block157">
+									<div class="column">
+										<div class="itemMenu level1">
+											<div class="itemSubMenu level0">
+												<div class="itemMenu level1">
+													<a class="itemMenuName level0 act" href="index388d.html?route=product/category&amp;path=102"><span>máy ảnh ống kính rời</span></a>
+													<a class="itemMenuName level0 act" href="indexf606.html?route=product/category&amp;path=105"><span>Photo&nbsp;Accessories</span></a>
+													<a class="itemMenuName level0 act" href="index974f.html?route=product/category&amp;path=103"><span>Sports&nbsp;&amp;&nbsp;Action</span></a>
+													<a class="itemMenuName level0 act" href="index2e37.html?route=product/category&amp;path=104"><span>Traditional</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pt_menu nav-4 pt_menu_no_child">
+							<div class="parentMenu">
+								<a href="index6067.html?route=product/category&amp;path=60">
+                                <span>Máy tính</span>
+                            </a>
+							</div>
+						</div>
+						<div class="pt_menu nav-5 pt_menu_no_child">
+							<div class="parentMenu">
+								<a href="indexc957.html?route=product/category&amp;path=24">
+                                <span>Điện Thoại</span>
+                            </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- menu desktop end -->
+
+
+	<!-- js menu start -->
+	<script type="text/javascript">
+		//<![CDATA[
+		var body_class = $('body').attr('class');
+		if (body_class == 'common-home') {
+			$('#pt_menu_home').addClass('act');
+		}
+
+		var CUSTOMMENU_POPUP_EFFECT = 1;
+		var CUSTOMMENU_POPUP_TOP_OFFSET = 70
+		//]]>
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 162) {
+					$('.nav-container').addClass("fix-nav");
+				} else {
+					$('.nav-container').removeClass("fix-nav");
+				}
+			});
+			$(function dropDown() {
+				elementClick = '#form-language .btn-language,#form-currency .btn-currency,#top-links .link-account,#cart .btn-cart';
+				elementSlide = '.dropdown-menu';
+				activeClass = 'active';
+
+				$(elementClick).on('click', function(e) {
+					e.stopPropagation();
+					var subUl = $(this).next(elementSlide);
+					if (subUl.is(':hidden')) {
+						subUl.slideDown();
+						$(this).addClass(activeClass);
+					} else {
+						subUl.slideUp();
+						$(this).removeClass(activeClass);
+					}
+					$(elementClick).not(this).next(elementSlide).slideUp();
+					$(elementClick).not(this).removeClass(activeClass);
+					e.preventDefault();
+				});
+
+				$(elementSlide).on('click', function(e) {
+					e.stopPropagation();
+				});
+
+				$(document).on('click', function(e) {
+					e.stopPropagation();
+					var elementHide = $(elementClick).next(elementSlide);
+					$(elementHide).slideUp();
+					$(elementClick).removeClass('active');
+				});
+			});
+		});
+	</script>
+	<!-- js menu end -->
+
+<!-- content start -->
+	<div id="content" class="wrapper-outer">
+    <div class="container">
+      <div class="wrapper-inter">
+        <!-- product detail start -->
+          <div class="row">
+            <!-- breadcrumb start -->
+            <div class="col-md-12">
+                <ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="#"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    </li>
+
+                        <li typeof="v:Breadcrumb">
+                            <a rel="v:url" property="v:title"  href="#"> Sản phẩm</a>
+                        </li>
+                    <li typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="#"> Test</a>
+                    </li>
+                    <li class="active" typeof="v:Breadcrumb">
+                        <a rel="v:url" property="v:title" href="#">aaa</a>
+                    </li>
+                </ol>
+            </div>
+            <!-- breadcrumb end -->
+
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-1 col-sm-6">
+                  <div class="thumbnails">
+                    <a class="thumbnail" title="Letraset Shoos">
+                         <img src="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" data-zoom-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos" alt="Letraset Shoos" />
+                     </a>
+                  </div>
+                  <div class="image-additional-container owl-style2">
+                    <div>
+                      <div class="image-additional" id="gallery_01">
+                        <a class="thumbnail" style="display: none" href="#" data-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" data-zoom-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos"><img src="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos" alt="Letraset Shoos" />
+                                           </a>
+                        <a style="display: none" class="thumbnail" href="#" data-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/4-800x800.jpg" data-zoom-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/4-800x800.jpg" title="Letraset Shoos"> <img src="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos" alt="Letraset Shoos" />
+                                           </a>
+                        <a style="display: none" class="thumbnail" href="#" data-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/1-800x800.jpg" data-zoom-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/1-800x800.jpg" title="Letraset Shoos"> <img src="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos" alt="Letraset Shoos" />
+                                           </a>
+                        <a style="display: none" class="thumbnail" href="#" data-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/11-800x800.jpg" data-zoom-image="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/11-800x800.jpg" title="Letraset Shoos"> <img src="http://legend7.demo.towerthemes.com/image/cache/catalog/products5/7-800x800.jpg" title="Letraset Shoos" alt="Letraset Shoos" />
+                                           </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 col-sm-6">
+                  <h1 class="product-name">Letraset Shoos</h1>
+
+                  <ul class="list-unstyled price-product">
+                    <li><span class="new-price">$180.00</span><span class="old-price">$350.00</span>
+                    </li>
+                  </ul>
+                  <p class="short-des">
+                    Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend .. </p>
+                  <div class="form-group">
+                    <label class="control-label" for="input-quantity">Qty</label>
+                    <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control" />
+                    <div>
+                      <input type="button" id="minus" value="-" class="form-control" />
+                      <input type="button" id="plus" value="&#43;" class="form-control" />
+                    </div>
+                    <button class="button" type="button" id="button-cart" data-loading-text="Loading..."><span>Thêm vào giỏ hàng</span>
+                                   </button>
+                  </div>
+                  <ul class="list-unstyled">
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li>Brand: <a href="index98fa.html?route=product/manufacturer/info&amp;manufacturer_id=8"><span class="ex-text">Apple</span></a>
+                    </li>
+                    <li>Product Code:<span class="ex-text">7-4</span>
+                    </li>
+                    <li>Availability:<span class="ex-text">In Stock</span>
+                    </li>
+                  </ul>
+                  <input type="hidden" name="product_id" value="98" />
+                  <div id="product">
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- description start -->
+              <div class="col-3">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab-description" data-toggle="tab">Description</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab-description">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue.
+                    Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis.
+                    Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida
+                    et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus
+                    malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque
+                    in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis</div>
+                </div>
+              </div>
+              <!-- description end -->
+
+              <!-- relate product start -->
+              <div class="related-product-container quickview-product">
+                <div class="module-title">
+                  <h2 style="text-align: center">Related Products</h2>
+                </div>
+                <div class="row">
+                  <div class="related-product quickview-added qv-wtext">
+                    <div class="row_items">
+                      <div class="product-layout product-grid">
+                        <div class="product-thumb item-inner">
+                          <div class="images-container">
+                            <a href="index1d1e.html?route=product/product&amp;product_id=93">
+                               <img src="file:///C:/Users/NhatLe/Desktop/CopyWebsite/LegenShop/legend7.demo.towerthemes.com/image/cache/catalog/products5/4-800x800.jpg" alt="Alicuam Consequat" title="Alicuam Consequat" class="image1" />
+                             </a>
+                          </div>
+                          <div class="des-container">
+                            <h2 class="product-name"><a href="index1d1e.html?route=product/product&amp;product_id=93">Alicuam Consequat</a></h2>
+                            <p class="product-des"></p>
+                            <div class="ratings">
+                              <div class="rating-box">
+                                <div class="rating5">rating</div>
+                              </div>
+                            </div>
+                            <p class="price">
+                              <span class="price-new">$180.00</span>
+                              <span class="price-old">$340.00</span>
+                            </p>
+                            <div class="actions">
+                              <div class="add-to-links">
+                                <div class="cart">
+                                  <button class="button btn-cart" type="button" title="Add to Cart" onclick="cart.add('93');"><span><span>Add to Cart</span></span>
+                                                           </button>
+                                </div>
+                                <div class="wishlist">
+                                  <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('93');">
+                                       <em>Add to Wish List</em>
+                                   </a>
+                                </div>
+                                <div class="compare">
+                                  <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('93');">
+                                       <em>Compare this Product</em>
+                                   </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- relate product end -->
+
+          </div>
+
+        </div>
+
+        <script type="text/javascript">
+        var minimum = 1;
+        $("#input-quantity").change(function() {
+          if ($(this).val() < minimum) {
+            alert("Số lượng nhỏ nhất là: " + minimum);
+            $("#input-quantity").val(minimum);
+          }
+        });
+        // increase number of product
+        function minus(minimum) {
+          var currentval = parseInt($("#input-quantity").val());
+          $("#input-quantity").val(currentval - 1);
+          if ($("#input-quantity").val() <= 0 || $("#input-quantity").val() < minimum) {
+            alert("Số lượng nhỏ nhất là: " + minimum);
+            $("#input-quantity").val(minimum);
+          }
+        };
+        // decrease of product
+        function plus() {
+          var currentval = parseInt($("#input-quantity").val());
+          $("#input-quantity").val(currentval + 1);
+        };
+        $('#minus').click(function() {
+          minus(minimum);
+        });
+        $('#plus').click(function() {
+          plus();
+        });
+        // zoom
+        $(".thumbnails img").elevateZoom({
+          zoomType: "window",
+          cursor: "crosshair",
+          gallery: 'gallery_01',
+          galleryActiveClass: "active",
+          imageCrossfade: true,
+          responsive: true,
+          zoomWindowOffetx: 0,
+          zoomWindowOffety: 0,
+        });
+
+        // related products
+        $(".related-product").owlCarousel({
+          navigation: true,
+          pagination: false,
+          slideSpeed: 500,
+          goToFirstSpeed: 1500,
+          items: 4,
+          itemsDesktop: [1199, 3],
+          itemsDesktopSmall: [767, 3],
+          itemsTablet: [640, 2],
+          itemsMobile: [480, 1],
+          addClassActive: true,
+          afterAction: function(el) {
+            this.$owlItems.removeClass('before-active')
+            this.$owlItems.removeClass('last-active')
+            this.$owlItems.eq(this.currentItem).addClass('before-active')
+            this.$owlItems.eq(this.currentItem + (this.owl.visibleItems.length - 1)).addClass('last-active')
+          }
+        });
+        //-->
+        </script>
+        <!-- product detail end -->
+    </div>
+  </div>
+<!-- content end -->
+
+<!-- footer start -->
+<footer>
+  <!-- footer head start -->
+  <div class="footer-static">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-xs-12">
+          <div class="col col1">
+            <div class="footer-title">
+              <h3>About us</h3>
+            </div>
+            <div class="footer-content">
+              <div class="logo-footer">
+                <a href="#"><img src="catalog/view/theme/tt_legend7/image/logo.png" alt=""></a>
+              </div>
+              <p class="desc-footer">It is a long established fact that reader will distract by the readable content of a page...</p>
+              <div class="address"><label>Adress :</label>Towerthemes, 1234 Stret Flexshop, States, Libero</div>
+              <div class="email"><label>Email :</label>demo@towerthemes.com</div>
+              <div class="telephone"><label>Phone :</label>(001)-123-456789</div>
+              <div id="cmsblock-39" class="cmsblock">
+                <div class='description'>
+                  <ul class="social-footer">
+                    <li class="facebook"><a href="https://www.facebook.com/plazathemes">facebook</a></li>
+                    <li class="twitter"><a href="https://twitter.com/plazathemes">twitter</a></li>
+                    <li class="rss"><a href="#">rss</a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/user/plazathemes">youtube</a></li>
+                    <li class="google"><a href="https://plus.google.com/+PlazaThemesMagento">google</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="col col2">
+                <div class="footer-title">
+                  <h3>Customer Service</h3>
+                </div>
+                <div class="footer-content">
+                  <ul class="list-unstyled">
+                    <li><a href="index2724.html?route=information/contact">Contact Us</a></li>
+                    <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
+                    <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
+                    <li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
+                    <li><a href="index4dd2.html?route=account/voucher">Gift Certificates</a></li>
+                    <li><a href="indexf110.html?route=product/special">Specials</a></li>
+                    <li><a href="indexe223.html?route=account/wishlist">Wish List</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer head end -->
+
+  <!-- footer bottom start -->
+  <div class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-sms-12">
+          <p>Copyright &copy; 2017 <a href="http://www.plazathemes.com/">plazathemes</a>. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-sms-12">
+          <div id="cmsblock-23" class="cmsblock">
+            <div class='description'>
+              <div class="paypal-footer">
+                <ul>
+                  <li class="first">
+                    <a href="#"><img src="image/catalog/paypal/paypal.png" alt="paypal"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal1.png" alt="paypal1"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal2.png" alt="paypal2"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal3.png" alt="paypal3"></a>
+                  </li>
+                  <li class="last">
+                    <a href="#"><img src="image/catalog/paypal/paypal4.png" alt="paypal4"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer bottom end -->
+
+  <!-- back to top start -->
+  <div id="back-top"></div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // hide #back-top first
+      $("#back-top").hide();
+      // fade in #back-top
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        // scroll body to 0px on click
+        $('#back-top').click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      });
+      if (jQuery(window).width() < 992) {
+        jQuery('.footer-static .footer-title').click(function() {
+          jQuery(this).parent('.col').toggleClass('active').siblings().removeClass('active');
+          jQuery(this).next('.col .footer-content').toggle(300);
+          jQuery(this).parent('.col.active').siblings().children('.col .footer-content').slideUp(300);
+        });
+
+      }
+    });
+  </script>
+  <!-- back top top end -->
+</footer>
+<!-- footer end -->
+
+</body>
+
+</html>

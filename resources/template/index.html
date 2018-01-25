@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FaceShop</title>
+	<script src="../../public/js/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/jquery-ui.js" type="text/javascript"></script>
+	<link href="../../public/js/jquery/css/jquery-ui.css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<script src="../../public/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<link href="../../public/js/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../../public/js/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet" type="text/css">
+	<link href="../../public/css/stylesheet.css" rel="stylesheet">
+	<script src="../../public/js/opentheme/ocslideshow/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/vermegamenu/ver_menu.js" type="text/javascript"></script>
+	<link href="../../public/css/ocslideshow/ocslideshow.css" rel="stylesheet" />
+	<link href="../../public/css/css/animate.css" rel="stylesheet" />
+
+	<script src="../../public/js/opentheme/hozmegamenu/custommenu.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/hozmegamenu/mobile_menu.js" type="text/javascript"></script>
+	<link href="../../public/css/hozmegamenu/css/custommenu.css" rel="stylesheet" />
+	<link href="../../public/css/css/owl.carousel.css" rel="stylesheet" />
+	<script src="../../public/js/jquery/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/ocquickview/ocquickview.js" type="text/javascript"></script>
+	<link href="../../public/css/ocquickview/css/ocquickview.css" rel="stylesheet">
+	<link href="../../public/css/oclayerednavigation/css/oclayerednavigation.css" rel="stylesheet">
+	<script src="../../public/js/opentheme/oclayerednavigation/oclayerednavigation.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/elevatezoom/jquery.elevatezoom.js" type="text/javascript"></script>
+	<link href="../../public/css/ocslideshow/ocslideshow.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/css/categorytabslider.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/jquery.countdown.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/css/ocpagebuilder.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="../../public/js/jquery/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+	<script src="../../public/js/common.js" type="text/javascript"></script>
+	<link href="image/catalog/cart.png" rel="icon" />
+	<script src="../../public/js/opentheme/jquery.bpopup.min.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/jquery.cookie.js" type="text/javascript"></script>
+	<script src="../../public/js/opentheme/ocslideshow/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery.plugin.js" type="text/javascript"></script>
+	<script src="../../public/js/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+
+<body class="common-home">
+
+	<!-- nav#top start -->
+	<nav id="top">
+		<div class="container">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-7 col-sm-7 col-sms-12">
+						<div class="top-left">
+							<div id="top-links">
+								<ul class="list-inline">
+									<li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle link-account" data-toggle="dropdown"><span>My Account</span></a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#" title="My Account" data-toggle="dropdown"><span>My Account</span></a></li>
+											<li><a href="#">Register</a></li>
+											<li><a href="#">Login</a></li>
+											<li><a href="#" title="Shopping Cart"><span>Shopping Cart</span></a></li>
+											<li><a href="#" title="Checkout"><span >Checkout</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-5 col-sms-12">
+						<div class="link-header">
+							<div class="store"><a href="#">Store Location </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- nav#top end -->
+
+	<!-- header start -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-sms-12">
+					<div id="logo">
+						<a href="#"><img src="../../public/images/logo.png" title="Legend 7" alt="Legend 7" class="img-responsive" /></a>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-9 col-sms-12">
+					<!-- search box start -->
+					<div id="search-by-category">
+						<div class="search-container">
+							<div class="categories-container">
+								<div class="hover-cate">
+									<p><span class="cate-selected" data-value="0">All Categories</span></p>
+									<ul class="cate-items">
+										<li class="item-cate" data-value="0">All Categories</li>
+										<li data-value="106" class="item-cate">Accessories</li>
+									</ul>
+								</div>
+							</div>
+							<input type="text" name="search" id="text-search" value="" placeholder="Search entire store here ..." class="" />
+							<div id="sp-btn-search" class="">
+								<button type="button" id="btn-search-category" class="btn btn-default btn-lg"> </button>
+							</div>
+						</div>
+						<div class="search-ajax">
+							<div class="ajax-loader-container" style="display: none;">
+								<img src="image/catalog/AjaxLoader.gif" class="ajax-load-img" width="30" height="30" alt="plazathemes.com" />
+							</div>
+							<div class="ajax-result-container">
+								<!-- Content of search results -->
+							</div>
+						</div>
+						<input type="hidden" id="ajax-search-enable" value="1" />
+					</div>
+
+					<script type="text/javascript">
+						$(document).ready(function() {
+							//box search
+							$('.hover-cate p').click(function() {
+								$(".cate-items").toggle("100");
+							});
+						});
+					</script>
+
+					<!-- search box end -->
+
+					<div class="free-shipping">
+						<p>Hotline: 19001267(8h00 - 22h00)</p>
+					</div>
+					<!-- .header-right start -->
+					<div class="header-right">
+						<div id="cart" class="btn-group btn-block">
+							<div class="top-cart-contain">
+								<div class="arrow-cart"></div>
+								<button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-cart btn-inverse btn-block btn-lg dropdown-toggle">
+								<span id="cart-total">My cart <span class="number-cart">0</span><span class="price-cart">$0.00</span></span>
+							</button>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<p class="text-center">Your shopping cart is empty!</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-wishlist"><a href="#" id="wishlist-total" title="Wish List (0)"><span>Wish List (0)</span></a></div>
+						<div class="header-compare">
+							<a href="index6431.html?route=product/compare" id="compare-total" title="Compare"><span>Compare</span></a>
+						</div>
+					</div>
+					<!-- .header-right end -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- menu mobile start -->
+	<div class="ma-nav-mobile-container">
+		<div class="hozmenu">
+			<div class="navbar">
+				<div id="navbar-inner" class="navbar-inner navbar-inactive">
+					<div class="menu-mobile">
+						<a class="btn btn-navbar navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+						<span class="brand navbar-brand">categories</span>
+					</div>
+					<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+						<li><span class=" button-view1 collapse1"><a href="indexef1f.html?route=product/category&amp;path=106">Accessories</a></span>
+							<ul class="level2">
+								<li><span class="button-view2   no-close"><a href="index8fdd.html?route=product/category&amp;path=107">Cables</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="index6c59.html?route=product/category&amp;path=109">Holders &amp; Stands</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="indexc00c.html?route=product/category&amp;path=108">Screen Protectors</a></span>
+									<ul class="level3"></ul>
+								</li>
+								<li><span class="button-view2   no-close"><a href="indexd981.html?route=product/category&amp;path=110">Storage</a></span>
+									<ul class="level3"></ul>
+								</li>
+							</ul>
+						</li>
+						<li><span class=" button-view1 collapse1"><a href="index73b3.html?route=product/category&amp;path=59">Computers</a></span>
+							<ul class="level2">
+								<li><span class="button-view2   collapse1"><a href="index08bf.html?route=product/category&amp;path=76">Accessories</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexdb3b.html?route=product/category&amp;path=77">Earbud Tips</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexaf75.html?route=product/category&amp;path=78">Headphone Amps</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexc94f.html?route=product/category&amp;path=79">Headphone Cases</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index460c.html?route=product/category&amp;path=80">Headphone Splitters</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index91c2.html?route=product/category&amp;path=71">Headphones Pro</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexec58.html?route=product/category&amp;path=74">Headphone Amplifiers</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexcac5.html?route=product/category&amp;path=75">Headphone Dacs</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexb4d8.html?route=product/category&amp;path=73">Hi-Res Music Players</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index4371.html?route=product/category&amp;path=72">Wire Managers</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index76bc.html?route=product/category&amp;path=61">Headphones Solo™2</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="indexcd29.html?route=product/category&amp;path=63">Bluetooth/Wireless</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index2b30.html?route=product/category&amp;path=64">Extra Bass</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index0854.html?route=product/category&amp;path=62">Headphones with Mic</a></span>
+										</li>
+										<li><span class="  no-close"><a href="index4eb1.html?route=product/category&amp;path=65">Noise Cancelling</a></span>
+										</li>
+									</ul>
+								</li>
+								<li><span class="button-view2   collapse1"><a href="index78aa.html?route=product/category&amp;path=66">Studio wireless</a></span>
+									<ul class="level3">
+										<li><span class="  no-close"><a href="index370c.html?route=product/category&amp;path=68">On Ear Headphones</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexe1fb.html?route=product/category&amp;path=69">Planar Magnetic</a></span>
+										</li>
+										<li><span class="  no-close"><a href="indexebd7.html?route=product/category&amp;path=67">Wireless Headphones</a></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- menu mobile end -->
+
+
+	<!-- menu desktop start -->
+	<div class="nav-container visible-lg visible-md">
+
+		<div class="nav1">
+			<div class="nav2">
+				<div id="pt_custommenu" class="pt_custommenu">
+					<div class="container">
+						<div id="pt_menu_home" class="pt_menu">
+							<div class="parentMenu"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="pt_menu nav-1 pt_menu_had_child">
+							<div class="parentMenu">
+								<a href="#">
+																<span>Kỹ thuật số</span>
+														</a>
+							</div>
+							<div id="popup57" class="popup" style="display: none; width: 1228px;">
+								<div class="block1" id="block157">
+									<div class="column">
+										<div class="itemMenu level1">
+											<div class="itemSubMenu level0">
+												<div class="itemMenu level1">
+													<a class="itemMenuName level0 act" href="index388d.html?route=product/category&amp;path=102"><span>máy ảnh ống kính rời</span></a>
+													<a class="itemMenuName level0 act" href="indexf606.html?route=product/category&amp;path=105"><span>Photo&nbsp;Accessories</span></a>
+													<a class="itemMenuName level0 act" href="index974f.html?route=product/category&amp;path=103"><span>Sports&nbsp;&amp;&nbsp;Action</span></a>
+													<a class="itemMenuName level0 act" href="index2e37.html?route=product/category&amp;path=104"><span>Traditional</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pt_menu nav-3 pt_menu_had_child">
+							<div class="parentMenu">
+								<a href="#">
+                                <span>Kỹ thuật số</span>
+                            </a>
+							</div>
+							<div id="popup57" class="popup" style="display: none; width: 1228px;">
+								<div class="block1" id="block157">
+									<div class="column">
+										<div class="itemMenu level1">
+											<div class="itemSubMenu level0">
+												<div class="itemMenu level1">
+													<a class="itemMenuName level0 act" href="index388d.html?route=product/category&amp;path=102"><span>máy ảnh ống kính rời</span></a>
+													<a class="itemMenuName level0 act" href="indexf606.html?route=product/category&amp;path=105"><span>Photo&nbsp;Accessories</span></a>
+													<a class="itemMenuName level0 act" href="index974f.html?route=product/category&amp;path=103"><span>Sports&nbsp;&amp;&nbsp;Action</span></a>
+													<a class="itemMenuName level0 act" href="index2e37.html?route=product/category&amp;path=104"><span>Traditional</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pt_menu nav-4 pt_menu_no_child">
+							<div class="parentMenu">
+								<a href="index6067.html?route=product/category&amp;path=60">
+                                <span>Máy tính</span>
+                            </a>
+							</div>
+						</div>
+						<div class="pt_menu nav-5 pt_menu_no_child">
+							<div class="parentMenu">
+								<a href="indexc957.html?route=product/category&amp;path=24">
+                                <span>Điện Thoại</span>
+                            </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- menu desktop end -->
+
+
+	<!-- js menu start -->
+	<script type="text/javascript">
+		//<![CDATA[
+		var body_class = $('body').attr('class');
+		if (body_class == 'common-home') {
+			$('#pt_menu_home').addClass('act');
+		}
+
+		var CUSTOMMENU_POPUP_EFFECT = 1;
+		var CUSTOMMENU_POPUP_TOP_OFFSET = 70
+		//]]>
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 162) {
+					$('.nav-container').addClass("fix-nav");
+				} else {
+					$('.nav-container').removeClass("fix-nav");
+				}
+			});
+			$(function dropDown() {
+				elementClick = '#form-language .btn-language,#form-currency .btn-currency,#top-links .link-account,#cart .btn-cart';
+				elementSlide = '.dropdown-menu';
+				activeClass = 'active';
+
+				$(elementClick).on('click', function(e) {
+					e.stopPropagation();
+					var subUl = $(this).next(elementSlide);
+					if (subUl.is(':hidden')) {
+						subUl.slideDown();
+						$(this).addClass(activeClass);
+					} else {
+						subUl.slideUp();
+						$(this).removeClass(activeClass);
+					}
+					$(elementClick).not(this).next(elementSlide).slideUp();
+					$(elementClick).not(this).removeClass(activeClass);
+					e.preventDefault();
+				});
+
+				$(elementSlide).on('click', function(e) {
+					e.stopPropagation();
+				});
+
+				$(document).on('click', function(e) {
+					e.stopPropagation();
+					var elementHide = $(elementClick).next(elementSlide);
+					$(elementHide).slideUp();
+					$(elementClick).removeClass('active');
+				});
+			});
+		});
+	</script>
+	<!-- js menu end -->
+
+<!-- content start -->
+	<div id="content">
+
+		<!-- baner start -->
+		<div class="col-sm-12 col-md-12" style="padding: 0">
+			<div>
+				<div class="banner7">
+					<div class="oc-banner7-container">
+						<div class="flexslider oc-nivoslider">
+							<div class="oc-loading"></div>
+							<div id="oc-inivoslider" class="slides">
+								<a href="http://plazathemes.com/"><img style="display: none;" src="http://demo.posthemes.com/pos_legend/layout2/img/blockslideshow/3.jpg" alt="" title="#banner7-caption1"  /></a>
+								<a href="http://plazathemes.com/"><img style="display: none;" src="http://demo.posthemes.com/pos_legend/layout2/img/blockslideshow/4.jpg" alt="" title="#banner7-caption2"  /></a>
+							</div>
+							<div id="banner7-caption1" class="banner7-caption nivo-html-caption nivo-caption">
+								<div class="timeloading"></div>
+								<div class="banner7-content slider-2">
+									<div class="text-content">
+										<h1 class="title1">IPHONE S7</h1>
+										<h2 class="sub-title">NOW SHIPPING!</h2>
+										<div class="banner7-des">
+											BodyGuardz is ready to protect your new iPhone. Oder now & be ready too. </div>
+										<div class="banner7-readmore">
+											<a href="http://plazathemes.com/" title="Read more">Read more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="banner7-caption2" class="banner7-caption nivo-html-caption nivo-caption">
+								<div class="timeloading"></div>
+								<div class="banner7-content slider-1">
+									<div class="text-content">
+										<h1 class="title1">GALAXY S8</h1>
+										<h2 class="sub-title">NEW SAMSUNG</h2>
+										<div class="banner7-des">
+											The next big thing in smartphones, and it’s 4G LTE ready. Designed with you in mind, it stays one step ahead to do more than ever before. </div>
+										<div class="banner7-readmore">
+											<a href="http://plazathemes.com/" title="Read more">Read more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(window).load(function() {
+					$('#oc-inivoslider').nivoSlider({
+						effect: 'random',
+						slices: 15,
+						boxCols: 8,
+						boxRows: 4,
+						manualAdvance: false,
+						animSpeed: 500,
+						pauseTime: '5000',
+						startSlide: 0,
+						controlNav: true,
+						directionNav: false,
+						controlNavThumbs: false,
+						pauseOnHover: false,
+						prevText: '<i class="fa fa-angle-left"></i>',
+						nextText: '<i class="fa fa-angle-right"></i>',
+						afterLoad: function() {
+							$('.oc-loading').css("display", "none");
+							$('.timeloading').css('animation-duration', '5000ms');
+						},
+					});
+				});
+			</script>
+		</div>
+		<!-- banner end -->
+
+		<!-- feature product start -->
+		<div class="row-3 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<!-- js header feature product strart -->
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$(".Category_Tabs_Home7 .tab_content_category").hide();
+								$(".Category_Tabs_Home7 .tab_content_category:first").show();
+								$(".Category_Tabs_Home7 ul.tabs-categorys li:first").addClass("active");
+								$(".Category_Tabs_Home7 ul.tabs-categorys li").click(function() {
+									$(".Category_Tabs_Home7 ul.tabs-categorys li").removeClass("active");
+									$(".Category_Tabs_Home7 ul.tabs-categorys .owl-item").removeClass("active");
+									$(this).addClass("active");
+									$(this).parent().addClass("active");
+									$(".Category_Tabs_Home7 .tab_content_category").hide();
+									$(".Category_Tabs_Home7 .tab_content_category").removeClass("animate1 wiggle");
+									var activeTab = $(this).attr("rel");
+									$("#" + activeTab).addClass("animate1 wiggle");
+									$("#" + activeTab).show();
+								});
+							});
+						</script>
+						<!-- js header feature product end -->
+							<!-- Category_Tabs_Home7 start -->
+						<div class="product-tabs-category-container-slider tabcategory-container Category_Tabs_Home7 quickview-product">
+							<div class="tab-title">
+								<div class="module-title">
+									<h2>Our products</h2>
+								</div>
+								<!-- tab-title -->
+								<ul class="tabs-categorys">
+									<li rel="tab_cate59">
+										Computers
+									</li>
+									<li rel="tab_cate17">
+										Mobiles &amp; Tablets
+									</li>
+									<li rel="tab_cate57">
+										Photo &amp; Camera
+									</li>
+								</ul>
+							</div>
+							<div class="row">
+								<div class="tab_container_category quickview-added">
+										<!-- productTabContent -->
+									<div id="tab_cate59" class="tab_content_category">
+										<div class="productTabContent owl-demo-tabcate">
+											<!-- row_items start-->
+											<div class='row_items'>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="indexb7c2.html?route=product/product&amp;product_id=125">
+															<img class="img-r lazy image2" src="image/cache/catalog/products8/11-800x800.jpg" alt="Susce Olequam" />                                                <img src="image/cache/catalog/products8/10-800x800.jpg" alt="Susce Olequam" title="Susce Olequam" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="indexb7c2.html?route=product/product&amp;product_id=125">Susce Olequam</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$120.00</span></p>
+																	<p class="old-price"><span class="price">$380.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('125');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('125');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('125');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="indexc2eb.html?route=product/product&amp;product_id=124">
+															<img class="img-r lazy image2" src="image/cache/catalog/products8/11-800x800.jpg" alt="Tiameo Dravida" />                                               <img src="image/cache/catalog/products8/9-800x800.jpg" alt="Tiameo Dravida" title="Tiameo Dravida" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="indexc2eb.html?route=product/product&amp;product_id=124">Tiameo Dravida</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-regular">
+																	<span class="regular-price">
+																								<span class="price">$180.00</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('124');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('124');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('124');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row_items end-->
+											<div class='row_items'>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="indexe338.html?route=product/product&amp;product_id=123">
+															<img class="img-r lazy image2" src="image/cache/catalog/products8/1-800x800.jpg" alt="Tonec Mon Acoo" />                                                <img src="image/cache/catalog/products8/4-800x800.jpg" alt="Tonec Mon Acoo" title="Tonec Mon Acoo" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="indexe338.html?route=product/product&amp;product_id=123">Tonec Mon Acoo</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-regular">
+																	<span class="regular-price">
+																								<span class="price">$200.00</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('123');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('123');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('123');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="index6a81.html?route=product/product&amp;product_id=121">
+															<img class="img-r lazy image2" src="image/cache/catalog/products8/3-800x800.jpg" alt="Wliquam Sonsequat" />                                             <img src="image/cache/catalog/products8/2-800x800.jpg" alt="Wliquam Sonsequat" title="Wliquam Sonsequat" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="index6a81.html?route=product/product&amp;product_id=121">Wliquam Sonsequat</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$180.00</span></p>
+																	<p class="old-price"><span class="price">$340.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('121');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('121');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('121');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row_items-->
+											<div class='row_items'>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="index740d.html?route=product/product&amp;product_id=120">
+																<img class="img-r lazy image2" src="image/cache/catalog/products8/4-800x800.jpg" alt="Qumsesan Elit" />                                             <img src="image/cache/catalog/products8/1-800x800.jpg" alt="Qumsesan Elit" title="Qumsesan Elit" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="index740d.html?route=product/product&amp;product_id=120">Qumsesan Elit</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$230.00</span></p>
+																	<p class="old-price"><span class="price">$400.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('120');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('120');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('120');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="indexb06e.html?route=product/product&amp;product_id=98">
+															<img class="img-r lazy image2" src="image/cache/catalog/products5/4-800x800.jpg" alt="Letraset Shoos" />                                                <img src="image/cache/catalog/products5/7-800x800.jpg" alt="Letraset Shoos" title="Letraset Shoos" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="indexb06e.html?route=product/product&amp;product_id=98">Letraset Shoos</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$180.00</span></p>
+																	<p class="old-price"><span class="price">$350.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('98');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('98');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('98');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row_items-->
+											<div class='row_items'>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="index92fe.html?route=product/product&amp;product_id=97">
+															<img class="img-r lazy image2" src="image/cache/catalog/products5/12-800x800.jpg" alt="Fusce Aliquon" />                                                <img src="image/cache/catalog/products5/6-800x800.jpg" alt="Fusce Aliquon" title="Fusce Aliquon" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="index92fe.html?route=product/product&amp;product_id=97">Fusce Aliquon</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$120.00</span></p>
+																	<p class="old-price"><span class="price">$380.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('97');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('97');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('97');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="indexfbb9.html?route=product/product&amp;product_id=96">
+															<img class="img-r lazy image2" src="image/cache/catalog/products5/2-800x800.jpg" alt="Etiam Grovido" />                                             <img src="image/cache/catalog/products5/5-800x800.jpg" alt="Etiam Grovido" title="Etiam Grovido" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="indexfbb9.html?route=product/product&amp;product_id=96">Etiam Grovido</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-regular">
+																	<span class="regular-price">
+																								<span class="price">$180.00</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('96');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('96');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('96');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row_items-->
+											<div class='row_items'>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="index971f.html?route=product/product&amp;product_id=94">
+															<img class="img-r lazy image2" src="image/cache/catalog/products5/7-800x800.jpg" alt="Danec Ac Tempus" />                                               <img src="image/cache/catalog/products5/3-800x800.jpg" alt="Danec Ac Tempus" title="Danec Ac Tempus" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="index971f.html?route=product/product&amp;product_id=94">Danec Ac Tempus</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$90.00</span></p>
+																	<p class="old-price"><span class="price">$280.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('94');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('94');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('94');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="product-thumb item-inner">
+													<div class="images-container">
+														<a href="index1d1e.html?route=product/product&amp;product_id=93">
+															<img class="img-r lazy image2" src="image/cache/catalog/products5/4-800x800.jpg" alt="Alicuam Consequat" />                                             <img src="image/cache/catalog/products5/2-800x800.jpg" alt="Alicuam Consequat" title="Alicuam Consequat" class="img-responsive lazy image1" />
+														</a>
+													</div>
+													<div class="des-container">
+														<h2 class="product-name"><a href="index1d1e.html?route=product/product&amp;product_id=93">Alicuam Consequat</a></h2>
+														<div class="ratings">
+															<div class="rating-box">
+																<div class="rating5">rating</div>
+															</div>
+														</div>
+														<div class="price-label">
+															<div class="box-price">
+																<div class="price-box box-special">
+																	<p class="special-price"><span class="price">$180.00</span></p>
+																	<p class="old-price"><span class="price">$340.00</span></p>
+																</div>
+															</div>
+														</div>
+														<div class="actions">
+															<div class="add-to-links">
+																<div class="cart">
+																	<button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('93');">
+																		<span><span>Add to Cart</span></span>
+																</button>
+																</div>
+																<div class="wishlist">
+																	<a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('93');">
+																<em>Add to Wish List</em>
+														</a>
+																</div>
+																<div class="compare">
+																	<a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('93');">
+																<em>Compare this Product</em>
+														</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- row_items-->
+										</div>
+
+									</div>
+									<!-- productTabContent -->
+									</div>
+								</div>
+								<!-- .tab_container_category -->
+							</div>
+						</div>
+						<!-- Category_Tabs_Home7 end -->
+
+						<!-- js tab feature product start -->
+						<script type="text/javascript">
+							$(document).ready(function() {
+								$(".Category_Tabs_Home7 .owl-demo-tabcate").owlCarousel({
+									autoPlay: false,
+									items: 4,
+									slideSpeed: 1000,
+									navigation: true,
+									paginationNumbers: true,
+									pagination: false,
+									stopOnHover: false,
+									itemsDesktop: [1199, 3],
+									itemsDesktopSmall: [991, 3],
+									itemsTablet: [768, 2],
+									itemsMobile: [480, 1],
+									addClassActive: true,
+									afterAction: function(el) {
+										this.$owlItems.removeClass('before-active')
+										this.$owlItems.removeClass('last-active')
+										this.$owlItems.eq(this.currentItem).addClass('before-active')
+										this.$owlItems.eq(this.currentItem + (this.owl.visibleItems.length - 1)).addClass('last-active')
+									}
+								});
+							});
+						</script>
+						<!-- js tab feature product end -->
+					</div>
+				</div>
+			</div>
+		<!-- feature product end -->
+
+		<!-- row-5 start -->
+		<div class="row-5 ">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-sm-12 col-md-12">
+		        <!-- best seller start -->
+		        <div class="bestseller-container quickview-product">
+		          <div class="module-title">
+		            <h2>Bestseller</h2>
+		          </div>
+		          <div class="row">
+		            <div class="bestseller-products-slider">
+		              <div class="row_items">
+		                <div class="item">
+		                  <div class="item-inner">
+		                    <div class="images-container">
+		                      <a class="image" href="indexb77e.html?route=product/product&amp;product_id=48">
+		                                <img class="image1" src="image/cache/catalog/products1/15-800x800.jpg" alt="Letraset Sheets" />
+		                                                                    <img class="image2" src="image/cache/catalog/products1/5-800x800.jpg" alt="Letraset Sheets" />
+		                                                            </a>
+		                    </div>
+		                    <!--images-container-->
+		                    <div class="des-container">
+		                      <h2 class="product-name"><a href="indexb77e.html?route=product/product&amp;product_id=48">Letraset Sheets</a></h2>
+		                      <div class="ratings">
+		                        <div class="rating-box">
+		                          <div class="rating5">rating</div>
+		                        </div>
+		                      </div>
+		                      <div class="price-label">
+		                        <div class="box-price">
+		                          <p class="price">
+		                            <span class="price-new">$180.00</span> <span class="price-old">$350.00</span>
+		                          </p>
+		                        </div>
+		                      </div>
+		                      <div class="actions">
+		                        <div class="add-to-links">
+		                          <div class="cart">
+		                            <button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('48');">
+		                                                <span><span>Add to Cart</span></span>
+		                                            </button>
+		                          </div>
+		                          <div class="wishlist">
+		                            <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('48');">
+		                                            <em>Add to Wish List</em>
+		                                        </a>
+		                          </div>
+		                          <div class="compare">
+		                            <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('48');">
+		                                            <em>Compare this Product</em>
+		                                        </a>
+		                          </div>
+		                        </div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="row_items">
+		                <div class="item">
+		                  <div class="item-inner">
+		                    <div class="images-container">
+		                      <a class="image" href="indexc21e.html?route=product/product&amp;product_id=34">
+		                                <img class="image1" src="image/cache/catalog/products1/2-800x800.jpg" alt="Lorem Ipsum Passages" />
+		                                                                    <img class="image2" src="image/cache/catalog/products1/7-800x800.jpg" alt="Lorem Ipsum Passages" />
+		                                                            </a>
+		                    </div>
+		                    <!--images-container-->
+		                    <div class="des-container">
+		                      <h2 class="product-name"><a href="indexc21e.html?route=product/product&amp;product_id=34">Lorem Ipsum Passages</a></h2>
+		                      <div class="ratings">
+		                        <div class="rating-box">
+		                          <div class="rating5">rating</div>
+		                        </div>
+		                      </div>
+		                      <div class="price-label">
+		                        <div class="box-price">
+		                          <p class="price">
+		                            $120.00 </p>
+		                        </div>
+		                      </div>
+		                      <div class="actions">
+		                        <div class="add-to-links">
+		                          <div class="cart">
+		                            <button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('34');">
+		                                                <span><span>Add to Cart</span></span>
+		                                            </button>
+		                          </div>
+		                          <div class="wishlist">
+		                            <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('34');">
+		                                            <em>Add to Wish List</em>
+		                                        </a>
+		                          </div>
+		                          <div class="compare">
+		                            <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('34');">
+		                                            <em>Compare this Product</em>
+		                                        </a>
+		                          </div>
+		                        </div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <script type="text/javascript">
+		          $(document).ready(function() {
+		            $(".bestseller-products-slider").owlCarousel({
+		              autoPlay: false,
+		              items: 4,
+		              slideSpeed: 1000,
+		              navigation: true,
+		              paginationNumbers: true,
+		              pagination: false,
+		              stopOnHover: false,
+		              itemsDesktop: [1199, 3],
+		              itemsDesktopSmall: [991, 3],
+		              itemsTablet: [768, 2],
+		              itemsMobile: [480, 1],
+		              addClassActive: true,
+		              afterAction: function(el) {
+		                this.$owlItems.removeClass('before-active')
+		                this.$owlItems.removeClass('last-active')
+		                this.$owlItems.eq(this.currentItem).addClass('before-active')
+		                this.$owlItems.eq(this.currentItem + (this.owl.visibleItems.length - 1)).addClass('last-active')
+		              }
+		            });
+
+		          });
+		        </script>
+		        <!-- best seller end -->
+
+		        <!-- most view start -->
+		        <div class="mostviewed-container quickview-product">
+		          <div class="module-title">
+		            <h2>Most viewed</h2></div>
+		          <div class="row">
+		            <div class="most-viewed-products-slider">
+
+		              <!-- item start -->
+		              <div class="item">
+		                <!-- item-inner start -->
+		                <div class="item-inner">
+		                  <div class="images-container">
+		                    <a class="image" href="indexc21e.html?route=product/product&amp;product_id=34">
+		                                                <img class="image2" src="image/cache/catalog/products1/7-800x800.jpg" alt="Lorem Ipsum Passages" />
+		                                                <img class="image1" src="image/cache/catalog/products1/2-800x800.jpg" alt="Lorem Ipsum Passages" />
+		                    </a>
+		                  </div>
+		                  <!--images-container-->
+		                  <div class="des-container">
+		                    <h2 class="product-name"><a href="indexc21e.html?route=product/product&amp;product_id=34">Lorem Ipsum Passages</a></h2>
+		                    <div class="ratings">
+		                      <div class="rating-box">
+		                        <div class="rating5">rating</div>
+		                      </div>
+		                    </div>
+		                    <div class="price-label">
+		                      <div class="box-price">
+		                        <div class="price-box">
+		                          <span class="price">$120.00</span>
+		                        </div>
+		                      </div>
+		                    </div>
+		                    <div class="actions">
+		                      <div class="add-to-links">
+		                        <div class="cart">
+		                          <button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('34');">
+		                                    <span><span>Add to Cart</span></span>
+		                                </button>
+		                        </div>
+		                        <div class="wishlist">
+		                          <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('34');">
+		                                <em>Add to Wish List</em>
+		                            </a>
+		                        </div>
+		                        <div class="compare">
+		                          <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('34');">
+		                                <em>Compare this Product</em>
+		                            </a>
+		                        </div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                  <!-- des-container -->
+		                </div>
+		                <!-- item-inner end -->
+
+		                <!-- item-inner start -->
+		                <div class="item-inner">
+		                  <div class="images-container">
+		                    <a class="image" href="indexa17e.html?route=product/product&amp;product_id=32">
+		                                                <img class="image2" src="image/cache/catalog/products1/4-800x800.jpg" alt="Nunc Facilisis" />
+		                                                <img class="image1" src="image/cache/catalog/products1/3-800x800.jpg" alt="Nunc Facilisis" />
+		                    </a>
+		                  </div>
+		                  <!--images-container-->
+		                  <div class="des-container">
+		                    <h2 class="product-name"><a href="indexa17e.html?route=product/product&amp;product_id=32">Nunc Facilisis</a></h2>
+		                    <div class="ratings">
+		                      <div class="rating-box">
+		                        <div class="rating4">rating</div>
+		                      </div>
+		                    </div>
+		                    <div class="price-label">
+		                      <div class="box-price">
+		                        <div class="price-box">
+		                          <span class="price">$180.00</span>
+		                        </div>
+		                      </div>
+		                    </div>
+		                    <div class="actions">
+		                      <div class="add-to-links">
+		                        <div class="cart">
+		                          <button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('32');">
+		                                    <span><span>Add to Cart</span></span>
+		                                </button>
+		                        </div>
+		                        <div class="wishlist">
+		                          <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('32');">
+		                                <em>Add to Wish List</em>
+		                            </a>
+		                        </div>
+		                        <div class="compare">
+		                          <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('32');">
+		                                <em>Compare this Product</em>
+		                            </a>
+		                        </div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                  <!-- des-container -->
+		                </div>
+		                <!-- item-inner end -->
+
+		                <!-- item-inner start -->
+		                <div class="item-inner">
+		                  <div class="images-container">
+		                    <a class="image" href="indexbfcf.html?route=product/product&amp;product_id=31">
+		                                                <img class="image2" src="image/cache/catalog/products1/2-800x800.jpg" alt="Quisque In Arcu" />
+		                                                <img class="image1" src="image/cache/catalog/products1/7-800x800.jpg" alt="Quisque In Arcu" />
+		                    </a>
+		                  </div>
+		                  <!--images-container-->
+		                  <div class="des-container">
+		                    <h2 class="product-name"><a href="indexbfcf.html?route=product/product&amp;product_id=31">Quisque In Arcu</a></h2>
+		                    <div class="ratings">
+		                      <div class="rating-box">
+		                        <div class="rating5">rating</div>
+		                      </div>
+		                    </div>
+		                    <div class="price-label">
+		                      <div class="box-price">
+		                        <div class="price-box">
+		                          <span class="price">$310.00</span>
+		                        </div>
+		                      </div>
+		                    </div>
+		                    <div class="actions">
+		                      <div class="add-to-links">
+		                        <div class="cart">
+		                          <button class="button btn-cart" type="button" data-toggle="tooltip" title="Add to Cart" onclick="cart.add('31');">
+		                                    <span><span>Add to Cart</span></span>
+		                                </button>
+		                        </div>
+		                        <div class="wishlist">
+		                          <a class="link-wishlist" title="Add to Wish List" data-toggle="tooltip" onclick="wishlist.add('31');">
+		                                <em>Add to Wish List</em>
+		                            </a>
+		                        </div>
+		                        <div class="compare">
+		                          <a class="link-compare" title="Compare this Product" data-toggle="tooltip" onclick="compare.add('31');">
+		                                <em>Compare this Product</em>
+		                            </a>
+		                        </div>
+		                      </div>
+		                    </div>
+		                  </div>
+		                  <!-- des-container -->
+		                </div>
+		                <!-- item-inner end -->
+		              </div>
+		              <!-- item end -->
+		            </div>
+		          </div>
+		        </div>
+		        <script type="text/javascript">
+		          $(document).ready(function() {
+		            $(".most-viewed-products-slider").owlCarousel({
+		              autoPlay: false,
+		              items: 3,
+		              slideSpeed: 1000,
+		              navigation: true,
+		              paginationNumbers: true,
+		              pagination: false,
+		              stopOnHover: false,
+		              itemsDesktop: [1199, 2],
+		              itemsDesktopSmall: [991, 2],
+		              itemsTablet: [700, 1],
+		              itemsMobile: [400, 1],
+		            });
+
+		          });
+		        </script>
+		        <!-- most view end -->
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- row-5 end -->
+
+	</div>
+<!-- content end -->
+
+<!-- footer start -->
+<footer>
+  <!-- footer head start -->
+  <div class="footer-static">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-xs-12">
+          <div class="col col1">
+            <div class="footer-title">
+              <h3>About us</h3>
+            </div>
+            <div class="footer-content">
+              <div class="logo-footer">
+                <a href="#"><img src="catalog/view/theme/tt_legend7/image/logo.png" alt=""></a>
+              </div>
+              <p class="desc-footer">It is a long established fact that reader will distract by the readable content of a page...</p>
+              <div class="address"><label>Adress :</label>Towerthemes, 1234 Stret Flexshop, States, Libero</div>
+              <div class="email"><label>Email :</label>demo@towerthemes.com</div>
+              <div class="telephone"><label>Phone :</label>(001)-123-456789</div>
+              <div id="cmsblock-39" class="cmsblock">
+                <div class='description'>
+                  <ul class="social-footer">
+                    <li class="facebook"><a href="https://www.facebook.com/plazathemes">facebook</a></li>
+                    <li class="twitter"><a href="https://twitter.com/plazathemes">twitter</a></li>
+                    <li class="rss"><a href="#">rss</a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/user/plazathemes">youtube</a></li>
+                    <li class="google"><a href="https://plus.google.com/+PlazaThemesMagento">google</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="col col2">
+                <div class="footer-title">
+                  <h3>Customer Service</h3>
+                </div>
+                <div class="footer-content">
+                  <ul class="list-unstyled">
+                    <li><a href="index2724.html?route=information/contact">Contact Us</a></li>
+                    <li><a href="index71ba.html?route=account/return/add">Returns</a></li>
+                    <li><a href="indexd773.html?route=product/manufacturer">Brands</a></li>
+                    <li><a href="index7cb2.html?route=information/sitemap">Site Map</a></li>
+                    <li><a href="index4dd2.html?route=account/voucher">Gift Certificates</a></li>
+                    <li><a href="indexf110.html?route=product/special">Specials</a></li>
+                    <li><a href="indexe223.html?route=account/wishlist">Wish List</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer head end -->
+
+  <!-- footer bottom start -->
+  <div class="bottom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-sms-12">
+          <p>Copyright &copy; 2017 <a href="http://www.plazathemes.com/">plazathemes</a>. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-sms-12">
+          <div id="cmsblock-23" class="cmsblock">
+            <div class='description'>
+              <div class="paypal-footer">
+                <ul>
+                  <li class="first">
+                    <a href="#"><img src="image/catalog/paypal/paypal.png" alt="paypal"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal1.png" alt="paypal1"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal2.png" alt="paypal2"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="image/catalog/paypal/paypal3.png" alt="paypal3"></a>
+                  </li>
+                  <li class="last">
+                    <a href="#"><img src="image/catalog/paypal/paypal4.png" alt="paypal4"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!-- footer bottom end -->
+
+	<!-- back to top start -->
+  <div id="back-top"></div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // hide #back-top first
+      $("#back-top").hide();
+      // fade in #back-top
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 300) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        // scroll body to 0px on click
+        $('#back-top').click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      });
+      if (jQuery(window).width() < 992) {
+        jQuery('.footer-static .footer-title').click(function() {
+          jQuery(this).parent('.col').toggleClass('active').siblings().removeClass('active');
+          jQuery(this).next('.col .footer-content').toggle(300);
+          jQuery(this).parent('.col.active').siblings().children('.col .footer-content').slideUp(300);
+        });
+
+      }
+    });
+  </script>
+  <!-- back top top end -->
+</footer>
+<!-- footer end -->
+
+</body>
+
+</html>

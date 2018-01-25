@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule public/css - [L]
+RewriteRule public/images - [L]
+RewriteRule public/js - [L]
+#RewriteRule ^ public/index.php [L]
+AddDefaultCharset UTF-8
